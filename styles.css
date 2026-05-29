@@ -88,10 +88,37 @@ img {
   color: var(--text-secondary);
   transition: color 0.3s;
   letter-spacing: 0.02em;
+  position: relative;
+  padding-bottom: 4px;
 }
 
 .nav-links a:hover {
   color: var(--text-primary);
+}
+
+.nav-links a:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--purple-500);
+}
+
+.nav-contact-link {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-contact-link:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--purple-500);
 }
 
 .nav-right {
